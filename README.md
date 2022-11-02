@@ -8,7 +8,7 @@ Faster setup times for Perforce Helix-Core for DevOps for Assembla, also if migr
 
 So for example let's say there are two separate files in a Unix Perforce database: `readme` and `README`. If they're on case sensitive mode, to Perforce they are different files completely. If they have any of this in their directories/db's, the filenames need to be renamed/moved. One way to procure a list is to use the script in this repository.
 
-## Example Case Handling Conversion
+## Example case handling conversion
 
 ```bash 
 p4d -r $P4ROOT -jc myCheckpoint
