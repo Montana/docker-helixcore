@@ -1,6 +1,6 @@
 FROM quay.io/centos/centos:stream8
 
-# Add external files
+# Add external files as needed
 COPY files/run.sh /usr/local/bin/run.sh
 COPY files/p4.auth /etc/logrotate.d/p4.auth
 COPY files/p4.commands /etc/logrotate.d/p4.commands
