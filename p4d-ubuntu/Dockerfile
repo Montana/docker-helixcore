@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-# Add external files
+# Add external files as needed
 COPY files/run.sh /usr/local/bin/run.sh
 COPY files/init.sh /usr/local/bin/init.sh
 COPY files/p4.auth /etc/logrotate.d/p4.auth
@@ -32,7 +32,7 @@ ENV P4NAME=$P4NAME \
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 RUN apt-get update -y \
-    && apt-get install -y wget gnupg less language-pack-ja-base language-pack-ja tzdata curl jq git openssl sudo vim wget unzip cron logrotate
+    && apt-get install -y wget gnupg less tzdata curl jq git openssl sudo vim wget unzip cron logrotate
 
 RUN echo 'export LANG=en_US.UTF-8' >> ~/.bashrc ;\
     echo 'export LANGUAGE="en_US"' >> ~/.bashrc
