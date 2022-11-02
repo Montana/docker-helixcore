@@ -6,10 +6,12 @@ Faster setup times for Perforce Helix-Core for DevOps for Assembla, also if migr
 
 ## Example
 
-So let's say you have a file called `makefile` and another one called `MAKEFILE`, the case sensitive behavior would pick that up as two different files completely, when in fact it's the same file. This is to stop that problem, and stop file collisions. 
+So for example let's say there are two separate files in a Unix Perforce database: `readme` and `README`. If they're on case sensitive mode, to Perforce they are different files completely. If they have any of this in their directories/db's, the filenames need to be renamed/moved. One way to procure a list is to use the script in this repository.
+
+## Routes of fixing filenaming collisions
 
 There's two ways to see the files that could cause collisions:
 
-* Obliterate the case variant paths (recommended)
+* Obliterate the case variant paths.
 * Perform a "deep rename"  of one (or more) of the case variant paths and rename the associated archive files (scripts inside this repo lists the files that may cause collisions). 
 
