@@ -29,7 +29,7 @@ ENV P4NAME=$P4NAME \
     P4ROOT=$P4HOME/$P4NAME \
     CASE_INSENSITIVE=$P4CASE
 
-RUN dnf -y install procps yum-utils git glibc-locale-source sudo glibc-langpack-ja glibc glibc-common tzdata logrotate cronie openssl \
+RUN dnf -y install procps yum-utils glibc glibc-common tzdata logrotate cronie openssl \
     && dnf -y upgrade \
     && dnf -y update \
     && cd /lib/systemd/system/sysinit.target.wants/ && \
