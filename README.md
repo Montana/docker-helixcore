@@ -1,7 +1,5 @@
-# helixcore
+# docker-helixcore
 
-HelixCore ( Perforce ) 
+## What is this?
 
-https://www.perforce.com/
-
-update 2022.1-2305383
+Faster setup times for Perforce Helix-Core for DevOps for Assembla.

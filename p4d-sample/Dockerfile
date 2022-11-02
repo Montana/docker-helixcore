@@ -1,5 +1,4 @@
 FROM quay.io/centos/centos:stream8
-LABEL maintainer "ueno.s <ueno.s@gamestudio.co.jp>"
 
 # Add external files
 COPY files/run.sh /usr/local/bin/run.sh
