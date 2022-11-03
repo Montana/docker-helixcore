@@ -22,6 +22,7 @@ Recovering from myCheckpoint.ckp.66...
 
 p4d  -C1 -r $P4ROOT -p 1666 &
 ```
+So if all your files were in lowercase and say not camel-case, run `p4 depot depotname` to ensure its Map: is lowercase, and fix it if not. At this point, you can run `p4 verify -q //...` to verify the integrity of the archive files.
 
 ## Routes of fixing filenaming collisions
 
